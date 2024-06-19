@@ -3,10 +3,6 @@ body {
   color: white;
 }
 
-main {
-  padding: 1rem;
-}
-
 header {
   background-image: url("../images/sun-and-moon-conversation-2.jpg");
   background-position: bottom center;
@@ -32,7 +28,18 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-between;
-  padding: 0 1.75rem;
+  padding: .2rem 1.75rem;
   list-style: none;
 }
 
+main {
+  text-align: justify;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.quote {
+  width: 100%;
+}
