@@ -1,31 +1,88 @@
 @media (min-width: 320px) {}
 
 @media (min-width: 375px) {
-  .container {
-    max-width: 640px;
+  header {
+    background-position-y: -1.5rem;
   }
 }
 
 @media (min-width: 425px) {
-  .container {
-    max-width: 768px;
+  header {
+    height: 22rem;
+    background-position-y: -2rem;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 1024px;
+  section:not([class="mission-statement"]) {
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+    grid-template-areas:
+      "h2 h2"
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+
+  .club-name {
+    background-color: transparent;
+    color: var(--orangish);
+    position: unset;
+  }
+
+  .mobile-hidden {
+    display: block;
+  }
+
+  .sun-and-moon-img {
+    width: 25%;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 15px white;
+  }
+
+  nav ul {
+    justify-content: space-evenly;
+  }
+
+  .introduction {
+    margin-block: 4rem;
+  }
+
+  .card {
+    grid-column: span 2;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+/* testimonial second switces to left side to show playful testimonial layout */
+
+
+  .card :is(img) {
+    width: 75%;
+    border-radius: 20% 10%;
+  }
+
+  h2 {
+    grid-area: h2;
+    margin-bottom: 1.5rem;
+    /* text-align: center; */
+  }
+
+  h3 {
+    margin: 0;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1280px;
-  }
-}
+@media (min-width: 1024px) {}
 
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1536px;
-  }
-}
+@media (min-width: 1440px) {}
