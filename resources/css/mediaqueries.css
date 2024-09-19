@@ -1,26 +1,4 @@
-/* Footer fix (white space when not enough content): */
-
-html, body {
-    height: 100%;
-}
-footer {
-    position: sticky;
-    top: 100vh;
-}
-
-/* Media Query Utility Class: Mobile First */
-
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 320px) {
-  .container {
-    max-width: 475px;
-  }
-}
+@media (min-width: 320px) {}
 
 @media (min-width: 375px) {
   .container {
