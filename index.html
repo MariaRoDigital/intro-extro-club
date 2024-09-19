@@ -14,120 +14,148 @@
   <title>Intro Extro Club</title>
 </head>
 
-<body>
+<body id="first-page">
 
-  <!-- mobile header and nav begins -->
+  <!-- header and nav begins -->
   <header>
-    <figure class="img-container">
-      <img src="resources/images/sun-and-moon-conversation-2.jpg" alt="" class="logo">
-    </figure>
-
-    <div class="overlay">
-      <h1 class="club-name">Intro-Extro Club</h1>
-    </div>
-
+    <h1 class="club-name">Intro-Extro Club</h1>
+    <img src="resources/images/sun-and-moon-conversation-2.jpg" class="mobile-hidden sun-and-moon-img" alt="">
     <nav>
-      <ul>
-        <li href="#welcome-message">how it works</li>
-        <li href="#locations">locations</li>
-        <li class="button cta">sign up</li>
+      <ul class="bold">
+        <li><a href="#about">about</a></li>
+        <li><a href="#location">location</a></li>
+        <li class="button cta"><a href="#">sign up</a></li>
       </ul>
     </nav>
   </header><!-- header and nav ends -->
 
-  <!-- main begins -->
-  <main>
 
+  <!-- main begins -->
+  <main class="wrapper">
     <!-- introduction begins -->
-    <div id="introduction">
-      <div class="mission-statement">
-        <p>Come join us in a space that we have created for both introverts and extroverts of all ages to model the
-          strong
-          skills eachother have as opposites, all while building a relationship and growing as individuals... and we
-          have pizza ;&#41</p>
-      </div>
-    </div><!-- introduction ends-->
+
+    <section class="mission-statement">
+      <p class="introduction">
+        Come join us in a space created for both introverts and extroverts of all
+        ages to model strong
+        skills eachother have as opposites, all while building a relationship and growing as individuals
+      </p>
+    </section><!-- introduction ends-->
 
     <!-- past events begins -->
-    <section class="container" id="past-events">
-      <figure class="img-container">
-        <img src="resources/images/connections.jpg" alt="two women having a one on one talk">
-      </figure>
-
-      <figure class="img-container">
-        <img src="resources/images/outside-one-one-one.jpg" alt="">
-      </figure>
+    <section class="past-events">
+      <h2>Past Events</h2>
+      <img src="resources/images/connections.jpg" alt="two women having a one on one talk">
+      <img src="resources/images/outside-one-one-one.jpg" alt="">
+      <p>Great relationships are born when you do something new with a feeling that brings you together</p>
     </section><!-- past events ends-->
 
     <!-- quote -->
-    <h2 class="quote">
-      <p>"Anyone who has never made a mistake, has never tried anything new"<br><br>-Albert Einstein
-      </p>
-    </h2>
+    <blockquote>"Introverts are often excellent listeners, but if you never speak, no one will know
+      that"<br><br>-Sophia
+      Dembling
+    </blockquote>
 
     <!-- participant-experiences begins -->
-    <section class="container" id="participant-experiences">
-      <figure class="img-container">
-        <img src="resources/images/members/Alexa-member.jpg" alt="close up of a smiling woman">
-      </figure>
-      <p>I loved meeting new people during one of the group get togethers, I was a little nervous coming in because I
-        didn't know what to expect but it all turned out better than I expected</p>
+    <section class="participant-experiences">
+      <h2>Member Experiences</h2>
+      <div class="card">
+        <img src="resources/images/members/Alexa-member.jpg" alt="close up of a smiling woman" class="position1">
+        <div class="card__content">
+          <p>Alexa Love</p>
+          <p>I loved meeting new people during one of the group get togethers, I was a little nervous
+            coming in because
+            I
+            didn't know what to expect but it all turned out better than I expected
+          </p>
+        </div>
+      </div>
 
-      <figure class="img-container">
+      <div class="card">
         <img src="resources/images/members/Catarina-member.jpg"
           alt="a woman standing by a small lake, she has a playful and genuine smile">
-      </figure>
-      <p>When I started coming to the club I felt intimidated, I didn't know what to expect. In my very first time
-        coming, I just wanted to observe so I could see the interactions, some people chose to have one on one intimate
-        talks and others chose to do group interactions, the members and coordinators all gave the club an extremely
-        welcoming feeling. I almost felt like I knew some of these members my whole life, some of them had great insight
-        to real life issues I was having and listened with intent, I also never felt forced to participate</p>
+        <div class="card__content">
+          <p>Catarina Yola</p>
+          <p>When I started coming to the club I felt intimidated, I didn't know what to expect. In my
+            very first time
+            coming, I just wanted to observe so I could see the interactions, some people chose to have one on one
+            intimate
+            talks and others chose to do group interactions, the members and coordinators all gave the club an extremely
+            welcoming feeling. I almost felt like I knew some of these members my whole life, some of them had great
+            insight
+            to real life issues I was having and listened with intent, I also never felt forced to participate
+          </p>
+        </div>
+      </div>
 
-      <figure class="behind-the-scenes">
-        <img src="resources/images/one-on-one.jpg"
-          alt="You look through a huge glass window, you can see two people having a private one on one conversation">
-          <figcaption>
-            Caught two of our members in a deep talk
-          </figcaption>
-      </figure>
-
-      <figure class="img-container">
+      <div class="card">
         <img src="resources/images/members/Ha-Nguyen-member.jpg" alt="">
-      </figure>
-      <p>I joined the club because I wanted to force myself out of my shell, I wanted to meet new people and practice
-        active listening with people other than my close circle. I truly feel that this club is helping me grow in all
-        those areas and more. I'm happy to say that I have made 2 great friends here</p>
+        <div class="card__content">
+          <p>Ha Nguyen</p>
+          <p>I joined the club because I wanted to force myself out of my shell, I wanted to meet new
+            people and
+            practice
+            active listening with people other than my close circle. I truly feel that this club is helping me grow in
+            all
+            those areas and more. I'm happy to say that I have made 2 great friends here
+          </p>
+        </div>
+      </div>
     </section><!-- participant experiences ends -->
 
-    <!-- locations begins -->
-    <section class="container" id="locations">
-      <figure class="img-container">
-        <img src="resources/images/" alt="">
+    <!-- quote -->
+    <blockquote>The secret to life is to put yourself in the right lighting. For some, it's Broadway
+      spotlight,
+      for others, a lamplit desk.
+      <br><br>-Susan Cain
+    </blockquote>
+
+    <section class="behind-the-scenes">
+      <h2>Behind the Scenes</h2>
+      <figure>
+        <img src="resources/images/one-on-one.jpg"
+          alt="You look through a huge glass window, you can see two people having a private one on one conversation">
+        <figcaption class="sm-font">Two of our members in a private conversation</figcaption>
       </figure>
-    </section><!-- locations ends -->
+    </section>
 
     <!-- quote -->
-    <h2 class="quote">
-      <p>"No matter what people tell you, words and ideas can change the world"<br><br>-Robin Williams
-      </p>
-    </h2>
+    <blockquote>"No matter what people tell you, words and ideas can change the world"<br><br>-Robin
+      Williams</blockquote>
+
 
     <!-- about begins -->
-    <section class="container" id="about">
+    <section class="about" id="about">
+      <h2>About</h2>
       <img src="resources/images/me2.jpg" alt="Shows Maria, a smiling woman who made the club possible">
-      <p>Heyo! I'm the mastermind behind this group created to bring the awesome power of extroverts and introverts together. I cant wait to welcome you into the group
-      <br><br>
-      My goal to achieve together with the group:
-      <br><br>
-      To help self proclaimed introverts to shine in front of the group, by sharing their ideas and opinions and to help self proclaimed extroverts find the joy in actively listening and delving into the deeper aspects of a relationship with members of the group
+      <p>Heyo! I'm Maria, the mastermind behind this group created to bring the awesome power of extroverts and
+        introverts
+        together. I cant wait to personally welcome you into the group and to help you grow
+        <br><br>
+        The dream that keeps my mission alive is to help self proclaimed introverts to shine in front of the group, by
+        sharing their ideas and opinions, and to
+        help self proclaimed extroverts find the joy in actively listening and delving into the deeper aspects of a
+        relationship with members of the group
       </p>
     </section><!-- about ends -->
+
+    <!-- locations begins -->
+    <section class="locations" id="location">
+      <h1>Come visit us, we'd love to have you!</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d41025.34066833317!2d-104.91744838971873!3d40.159506261558846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1725572129549!5m2!1sen!2sus"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="group-location" id="group-location"></iframe>
+    </section><!-- locations ends -->
 
   </main><!-- main ends -->
 
   <!-- footer begins -->
   <footer>
-
+    <p>stay in the loop!</p>
+    <p>Facebook</p>
+    <p>Twitter</p>
+    <p class="sm-font"> &copy site created by: Maria Rodriguez</p>
   </footer><!-- footer ends -->
 
 </body>
