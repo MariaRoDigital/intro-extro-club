@@ -14,26 +14,40 @@
 }
 
 @media (min-width: 768px) {
+  nav {
+    margin-top: 3rem;
+  }
+
   section:not([class="mission-statement"]) {
     display: grid;
-    width: 95%;
+    width: 85%;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: .75rem;
-    grid-template-areas:
-      "h2 h2"
+  }
+
+  :is(img) {
+    border-radius: 10px;
+    width: 60%;
+    justify-self: center;
+  }
+
+  .full-width {
+    grid-column: 1 / span 2;
+  }
+
+  .club-name {
+    position: unset;
+    margin: 0 auto;
   }
 
   header {
-    display: flex;
-    flex-direction: column;
     background: none;
+    align-items: center;
   }
 
   .club-name {
     background-color: transparent;
     color: var(--orangish);
-    position: unset;
   }
 
   .mobile-hidden {
@@ -42,17 +56,30 @@
 
   .sun-and-moon-img {
     width: 25%;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
     border-radius: 50%;
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 20px white;
+  }
+
+  nav {
+    height: 3rem;
   }
 
   nav ul {
     justify-content: space-evenly;
   }
 
+  h2 {
+    grid-column: 1 / span 2;
+    text-align: left;
+  }
+
   .introduction {
-    margin-block: 4rem;
+    margin-block: 3rem;
+  }
+
+  blockquote {
+    padding-inline: 3rem;
   }
 
   .card {
@@ -62,27 +89,57 @@
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "img content"
   }
 
-/* testimonial second switces to left side to show playful testimonial layout */
-
+  .card__content {
+    grid-area: content;
+  }
 
   .card :is(img) {
-    width: 75%;
     border-radius: 20% 10%;
   }
 
-  h2 {
-    grid-area: h2;
-    margin-bottom: 1.5rem;
-    /* text-align: center; */
+  .card:nth-child(odd) {
+    grid-template-areas:
+      "content img";
   }
 
-  h3 {
-    margin: 0;
+  .card:nth-child(odd) :is(img) {
+    border-radius: 10% 20%;
+  }
+
+  .member {
+    grid-area: img;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .behind-the-scenes figure {
+    width: 65%;
+    justify-self: center;
+  }
+
+  .about img {
+    justify-self: center;
+  }
+
+  .location :is(p) {
+    justify-self: center;
   }
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+
+  nav {
+    height: 4rem;
+  }
+}
 
 @media (min-width: 1440px) {}
